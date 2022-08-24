@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E2631AB-80C6-4D91-A64C-71A5211C6CA9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MorgansOfficev2</RootNamespace>
+    <AssemblyName>MorgansOfficev2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignmentUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignmentUpdateForm.Designer.cs">
+      <DependentUpon>AssignmentUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataController.Designer.cs">
+      <DependentUpon>DataController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentAddForm.Designer.cs">
+      <DependentUpon>DepartmentAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentDeleteForm.Designer.cs">
+      <DependentUpon>DepartmentDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentReportForm.Designer.cs">
+      <DependentUpon>DepartmentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentUpdateForm.Designer.cs">
+      <DependentUpon>DepartmentUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAddForm.Designer.cs">
+      <DependentUpon>EmployeeAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAssignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAssignForm.Designer.cs">
+      <DependentUpon>EmployeeAssignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDeleteForm.Designer.cs">
+      <DependentUpon>EmployeeDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRemoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeRemoveForm.Designer.cs">
+      <DependentUpon>EmployeeRemoveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeReportForm.Designer.cs">
+      <DependentUpon>EmployeeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeUpdateForm.Designer.cs">
+      <DependentUpon>EmployeeUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MorgansOfficev2DataSet.cs">
+      <DependentUpon>MorgansOfficev2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MorgansOfficev2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MorgansOfficev2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectAddForm.Designer.cs">
+      <DependentUpon>ProjectAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectDeleteForm.Designer.cs">
+      <DependentUpon>ProjectDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectsReportForm.Designer.cs">
+      <DependentUpon>ProjectsReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectUpdateForm.Designer.cs">
+      <DependentUpon>ProjectUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AssignmentUpdateForm.resx">
+      <DependentUpon>AssignmentUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataController.resx">
+      <DependentUpon>DataController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentAddForm.resx">
+      <DependentUpon>DepartmentAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentDeleteForm.resx">
+      <DependentUpon>DepartmentDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentReportForm.resx">
+      <DependentUpon>DepartmentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentUpdateForm.resx">
+      <DependentUpon>DepartmentUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAddForm.resx">
+      <DependentUpon>EmployeeAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAssignForm.resx">
+      <DependentUpon>EmployeeAssignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDeleteForm.resx">
+      <DependentUpon>EmployeeDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeRemoveForm.resx">
+      <DependentUpon>EmployeeRemoveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeReportForm.resx">
+      <DependentUpon>EmployeeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeUpdateForm.resx">
+      <DependentUpon>EmployeeUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectAddForm.resx">
+      <DependentUpon>ProjectAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectDeleteForm.resx">
+      <DependentUpon>ProjectDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectsReportForm.resx">
+      <DependentUpon>ProjectsReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectUpdateForm.resx">
+      <DependentUpon>ProjectUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MorgansOfficev2DataSet.xsc">
+      <DependentUpon>MorgansOfficev2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MorgansOfficev2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MorgansOfficev2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MorgansOfficev2DataSet.xss">
+      <DependentUpon>MorgansOfficev2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
